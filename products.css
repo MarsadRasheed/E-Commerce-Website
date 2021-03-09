@@ -1,0 +1,135 @@
+.line{   
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.line img:hover{
+    transform: scale(1.1);
+}
+
+.line img{
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
+.wishButton{
+    color: #333333;
+    float: right;
+    padding-top: 5px;
+    transition: 0.4s;
+}
+
+.wishButton:hover{
+    color: #6c7ae0;
+}
+
+.quickView {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 24px;
+    display: none;
+}
+
+.quickView:hover{
+    color: white;
+    background-color: #333333;
+    display: block;
+}
+
+.imgCon :hover ~ .quickView{
+    display: block;
+    animation:  bounce 0.6s 1;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateX(200px)
+    }
+}
+
+ul li a{
+    padding-right: 30px;
+    color: #888;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+ul li a:hover{
+    color: Black;
+}
+
+ul li.active a{
+    color: Black;
+    text-decoration: underline;
+}
+
+.loadButton{
+    color: black;
+    font-weight: 500;
+    background-color: rgb(230, 230, 230);
+    border-radius: 23px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    transition: 0.8s;
+}
+
+.loadButton:hover{
+    color: white;
+    background-color: #222;
+}
+
+.wishListButton{
+    background: none; 
+    border:none;
+    position: absolute;
+    right: 10px;
+}
+
+.inputType{
+    width: calc(100% - 85%);
+    border: 1px solid #b2b2b2;
+    text-align: center;
+}
+
+.inputType:hover{
+    border-radius: 5px;
+    border: 1px solid #6c7ae0;
+    background-color: #6c7ae0;
+    color: white;
+}
+
+.filterButton{
+    border: none;
+    background-color: transparent !important;
+    color: #888 !important;
+    border: none;
+    border-color: transparent !important;
+    margin-right: 20px;
+    letter-spacing: .1rem;
+    transition: 0.5s;
+}
+
+.filterButton:hover{
+    color: #000000 !important;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.filterButton.active{
+    border: none;
+    color: #000000 !important;
+    font-weight: bold;
+    background-color: transparent !important;
+}
